@@ -16,7 +16,7 @@ const scheduleData = {
     uniformName: "Seragam Merah-Putih",
 
     // GANTI GAMBAR DI SINI
-    uniformImage: "images/seragam-senin.png",
+    uniformImage: "seragam-senin.png",
 
     subjects: [
 
@@ -37,7 +37,7 @@ const scheduleData = {
     ],
 
     note:
-      "Seragam: Merah-Putih. Pulang Jam 13:45 WIB. 🚀"
+      "Pulang Jam 13:45 WIB. 🚀"
 
   },
 
@@ -49,7 +49,7 @@ const scheduleData = {
     uniformName: "Seragam Batik Purwo",
 
     // GANTI GAMBAR DI SINI
-    uniformImage: "images/seragam-selasa.png",
+    uniformImage: "seragam-selasa.png",
 
     subjects: [
 
@@ -66,7 +66,7 @@ const scheduleData = {
     ],
 
     note:
-      "Seragam: Batik Purwo. Pulang Jam 13:00 WIB. ⭐"
+      "Pulang Jam 13:00 WIB. ⭐"
 
   },
 
@@ -78,7 +78,7 @@ const scheduleData = {
     uniformName: "Seragam Olahraga",
 
     // GANTI GAMBAR DI SINI
-    uniformImage: "images/seragam-rabu.png",
+    uniformImage: "seragam-rabu.png",
 
     subjects: [
 
@@ -93,7 +93,7 @@ const scheduleData = {
     ],
 
     note:
-      "Seragam: Olahraga. Pulang Jam 13:45 WIB. 🌟"
+      "Pulang Jam 13:45 WIB. 🌟"
 
   },
 
@@ -105,7 +105,7 @@ const scheduleData = {
     uniformName: "Batik Muhammadiyah",
 
     // GANTI GAMBAR DI SINI
-    uniformImage: "images/seragam-kamis.png",
+    uniformImage: "seragam-kamis.png",
 
     subjects: [
 
@@ -122,7 +122,7 @@ const scheduleData = {
     ],
 
     note:
-      "Seragam: Batik Muhammadiyah. Pulang Jam 13:45 WIB. Sementara Off Renang. 🛰️"
+      "Pulang Jam 13:45 WIB. Sementara Off Renang. 🛰️"
 
   },
 
@@ -134,7 +134,7 @@ const scheduleData = {
     uniformName: "BIM Identitas",
 
     // GANTI GAMBAR DI SINI
-    uniformImage: "images/seragam-jumat.png",
+    uniformImage: "seragam-jumat.png",
 
     subjects: [
 
@@ -145,7 +145,7 @@ const scheduleData = {
     ],
 
     note:
-      "Seragam: BIM Identitas. Pulang Jam 11:00 WIB. 🚀✨"
+      "Pulang Jam 11:00 WIB. 🚀✨"
 
   }
 
