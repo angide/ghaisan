@@ -10,12 +10,15 @@ const scheduleData = {
   senin: {
     title: "Senin",
     subjects: [
-      "Mata Pelajaran 1",
-      "Mata Pelajaran 2",
-      "Mata Pelajaran 3",
-      "Mata Pelajaran 4"
+      "Upacara",
+      "Sholat Dhuha",
+      "Pancasila",
+      "Seni Musik 1"
+      "Al Islam 2"
+      "Matematika"
+      "Les"
     ],
-    note: "Jangan lupa membawa perlengkapan sekolah hari Senin. 🚀"
+    note: "Seragam Merah Putih. Pulang jam 13.45 WIB 🚀"
   },
   selasa: {
     title: "Selasa",
