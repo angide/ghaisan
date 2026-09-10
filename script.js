@@ -13,9 +13,9 @@ const scheduleData = {
       "Upacara",
       "Sholat Dhuha",
       "Pancasila",
-      "Seni Musik 1"
-      "Al Islam 2"
-      "Matematika"
+      "Seni Musik 1",
+      "Al Islam 2",
+      "Matematika",
       "Les"
     ],
     note: "Seragam Merah Putih. Pulang jam 13.45 WIB 🚀"
@@ -23,41 +23,41 @@ const scheduleData = {
   selasa: {
     title: "Selasa",
     subjects: [
-      "Mata Pelajaran 1",
-      "Mata Pelajaran 2",
-      "Mata Pelajaran 3",
-      "Mata Pelajaran 4"
+      "Tahsin Ummi",
+      "Bahasa Jawa 2",
+      "Matematika 3",
+      "Bahasa Inggris 2"
     ],
-    note: "Siapkan buku dan alat tulis sebelum berangkat. ⭐"
+    note: "Seragam Batik Purwo. Pulang jam 13.00 WIB. ⭐"
   },
   rabu: {
     title: "Rabu",
     subjects: [
-      "Mata Pelajaran 1",
-      "Mata Pelajaran 2",
-      "Mata Pelajaran 3",
-      "Mata Pelajaran 4"
+      "Tahsin Ummi",
+      "Olahraga 3",
+      "Matematika 3",
+      "Ekskul: ROBOTIC"
     ],
-    note: "Tetap semangat! Satu langkah kecil hari ini adalah kemajuan. 🌟"
+    note: "Seragam Olahraga. Pulang Jam 13.40 WIB. 🌟"
   },
   kamis: {
     title: "Kamis",
     subjects: [
-      "Mata Pelajaran 1",
-      "Mata Pelajaran 2",
-      "Mata Pelajaran 3",
-      "Mata Pelajaran 4"
+      "Tahsin Ummi",
+      "Seni Rupa 2",
+      "Al Islam 2",
+      "Bahasa Indonesia 3,"
+      "Les"
     ],
-    note: "Pastikan semua tugas sudah dibawa dan dikumpulkan. 🛰️"
+    note: "Seragam Batik Muhammadiyah. Pulang Jam 13.45. Sementara Tidak ikut Ekskul Renang. 🛰️"
   },
   jumat: {
     title: "Jumat",
     subjects: [
-      "Mata Pelajaran 1",
-      "Mata Pelajaran 2",
-      "Mata Pelajaran 3"
+      "Tahsin Ummi",
+      "Bahasa Indonesia 5"
     ],
-    note: "Hebat! Selesaikan misi minggu ini dengan senyum. 🚀✨"
+    note: "Seragam BIM Identitas. Pulang Jam 11.00 WIB. 🚀✨"
   }
 };
 
