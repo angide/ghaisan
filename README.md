@@ -1,18 +1,18 @@
-# GHAISAN Jadwal Astronaut
+# GHAISAN Mission Control 🚀
 
-Website jadwal anak berbasis HTML/CSS/JavaScript, siap di-upload ke GitHub Pages.
+Website jadwal anak tema astronaut. Single-file static web app.
 
 ## Fitur
-- Tema astronaut/space responsif
-- Jadwal Senin–Minggu
+- Responsive HP/tablet/desktop
+- Tema astronaut + animasi bintang/roket/planet
+- Jadwal Senin-Minggu
 - Countdown kegiatan berikutnya
-- Checklist kegiatan selesai
-- Progress harian
-- Tambah, edit, hapus kegiatan
-- Pengaturan nama, kelas, dan catatan
-- Data tersimpan otomatis di browser (localStorage)
-- Tidak membutuhkan database atau server
+- Status kegiatan sedang berlangsung
+- Checklist dan progress harian
+- Tambah/edit/hapus jadwal
+- Pengaturan nama, kelas, catatan
+- Data otomatis tersimpan di browser (localStorage)
+- Tanpa database/server
 
-## Upload
-Upload `index.html` ke repository GitHub, lalu buka:
-Settings → Pages → Deploy from branch → pilih branch `main` dan folder `/root`.
+## GitHub Pages
+Upload `index.html` ke repository → Settings → Pages → Deploy from branch → `main` → `/root`.
