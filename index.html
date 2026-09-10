@@ -29,12 +29,12 @@ header{padding:24px 0 10px}.nav{display:flex;align-items:center;justify-content:
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.stat{padding:12px;border-radius:15px;background:#07162f;border:1px solid var(--line);text-align:center}.stat b{display:block;font-size:22px}.stat span{font-size:11px;color:var(--muted)}
 .progress{height:12px;border-radius:99px;background:#10254a;overflow:hidden;border:1px solid var(--line)}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan));box-shadow:0 0 16px #57dfff88;transition:width .5s}
 .tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 15px;scrollbar-width:thin}.day{min-width:100px;padding:10px 12px;border-radius:14px;background:#0b2144;border:1px solid var(--line);font-weight:850}.day small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.day.active{background:linear-gradient(135deg,#2f76ff,#25bddd);box-shadow:0 8px 25px #238cff33}.day.active small{color:#dffaff}
-.head{display:flex;align-items:center;justify-content:space-between;gap:10px}.head h2{margin:0}.items{display:grid;gap:10px;margin-top:15px}.item{display:grid;grid-template-columns:1fr auto;align-items:center;gap:14px;padding:15px;border-radius:18px;background:#071833d9;border:1px solid var(--line);transition:.2s}.item:hover{transform:translateY(-2px);border-color:#62cfff55}.item.current{border-color:#63e6a877;box-shadow:0 0 0 1px #63e6a822,0 0 25px #42e6a811}.clock{font-weight:950;color:var(--cyan);font-size:16px}.clock small{color:#7188a9;font-weight:600}.subject{font-weight:900;font-size:17px}.type{font-size:12px;color:var(--muted);margin-top:3px}.done{text-decoration:line-through;opacity:.45}.itemBtns{display:flex;gap:5px}.icon{width:34px;height:34px;padding:0;border-radius:11px;background:#16325c;border:1px solid var(--line);font-weight:900}.icon.ok{background:var(--green);color:#062016}.icon.del{background:#52243a}
+.head{display:flex;align-items:center;justify-content:space-between;gap:10px}.head h2{margin:0}.items{display:grid;gap:10px;margin-top:15px}.item{display:grid;grid-template-columns:105px 1fr auto;align-items:center;gap:14px;padding:15px;border-radius:18px;background:#071833d9;border:1px solid var(--line);transition:.2s}.item:hover{transform:translateY(-2px);border-color:#62cfff55}.item.current{border-color:#63e6a877;box-shadow:0 0 0 1px #63e6a822,0 0 25px #42e6a811}.clock{font-weight:950;color:var(--cyan);font-size:16px}.clock small{color:#7188a9;font-weight:600}.subject{font-weight:900;font-size:17px}.type{font-size:12px;color:var(--muted);margin-top:3px}.done{text-decoration:line-through;opacity:.45}.itemBtns{display:flex;gap:5px}.icon{width:34px;height:34px;padding:0;border-radius:11px;background:#16325c;border:1px solid var(--line);font-weight:900}.icon.ok{background:var(--green);color:#062016}.icon.del{background:#52243a}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.note{color:#c8d7ed;line-height:1.65}.tip{display:flex;gap:12px;align-items:flex-start}.tipIcon{font-size:28px}.empty{text-align:center;color:var(--muted);padding:38px 10px}.footer{text-align:center;color:#61799d;font-size:11px;padding:30px 0 45px}
 .modal{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal.show{display:flex}.modalbox{width:min(540px,100%);background:#081a3a;border:1px solid #67dfff44;border-radius:24px;padding:22px;box-shadow:0 25px 80px #000b}.form{display:grid;gap:12px}.field label{display:block;color:var(--muted);font-size:12px;margin:0 0 5px}.field input,.field select{width:100%;padding:12px;border-radius:12px;background:#04122b;border:1px solid var(--line);color:#fff;outline:none}.field input:focus,.field select:focus{border-color:#5ddcff88;box-shadow:0 0 0 3px #4ccfff12}.modalActions{display:flex;justify-content:flex-end;gap:8px;margin-top:5px}
 .toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:#0c2348;border:1px solid #6ce4ff55;padding:12px 16px;border-radius:14px;opacity:0;pointer-events:none;transition:.25s;z-index:30;box-shadow:0 12px 35px #0007}.toast.show{opacity:1;transform:translate(-50%,0)}
 .rocket{position:fixed;right:4vw;top:25%;font-size:30px;opacity:.18;animation:rocket 9s ease-in-out infinite;pointer-events:none}.planet{position:fixed;left:-55px;bottom:7%;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#69d8ff,#3979d8 45%,#162a78 75%);box-shadow:0 0 50px #348dff33;opacity:.25;pointer-events:none}.ring{position:absolute;width:190px;height:38px;border:5px solid #9bdcff66;border-radius:50%;transform:rotate(-20deg);top:50px;left:-20px}
-@media(max-width:780px){.hero,.grid{grid-template-columns:1fr}.hero h2{font-size:31px}.nav{align-items:flex-start}.brand h1{font-size:25px}.helmet{width:54px;height:54px;font-size:29px}.item{grid-template-columns:1fr}.itemBtns{grid-column:1}.mission .time{font-size:21px}.stats{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:780px){.hero,.grid{grid-template-columns:1fr}.hero h2{font-size:31px}.nav{align-items:flex-start}.brand h1{font-size:25px}.helmet{width:54px;height:54px;font-size:29px}.item{grid-template-columns:80px 1fr}.itemBtns{grid-column:2}.mission .time{font-size:21px}.stats{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
@@ -50,7 +50,7 @@ header{padding:24px 0 10px}.nav{display:flex;align-items:center;justify-content:
   <div class="eyebrow">🚀 TODAY'S SPACE MISSION</div>
   <h2 id="greeting">Halo, Ghaisan!</h2>
   <p>Selamat datang di Mission Control. Ikuti jadwalmu, selesaikan setiap misi, dan jadi penjelajah kecil yang hebat!</p>
-  <div class="mission"><div><div class="type">MISI HARI INI</div><div class="name" id="nextName">Memuat...</div></div><div class="time" id="countdown">🚀</div></div>
+  <div class="mission"><div><div class="type">KEGIATAN BERIKUTNYA</div><div class="name" id="nextName">Memuat...</div></div><div class="time" id="countdown">--:--:--</div></div>
  </div>
  <div class="card">
   <div class="eyebrow">⭐ MISSION STATUS</div>
@@ -67,7 +67,7 @@ header{padding:24px 0 10px}.nav{display:flex;align-items:center;justify-content:
 </section>
 
 <section class="grid">
- <div class="card"><div class="eyebrow">📌 CATATAN HARIAN</div><h3>Catatan <span id="notesDay">Senin</span></h3><div class="note" id="notes">Belum ada catatan untuk hari ini.</div><button class="btn primary" style="margin-top:13px;width:100%" onclick="openNote()">✎ Edit catatan hari ini</button></div>
+ <div class="card"><div class="eyebrow">📌 QUICK NOTES</div><h3>Catatan Misi</h3><div class="note" id="notes">Belum ada catatan.</div></div>
  <div class="card"><div class="eyebrow">🌟 ASTRONAUT TIP</div><h3>Pesan untuk Ghaisan</h3><div class="tip"><div class="tipIcon">🧑‍🚀</div><div class="note">Penjelajah hebat selalu disiplin, berani belajar hal baru, menjaga tubuh, dan tetap ceria. <b>Semangat, Ghaisan! 🚀</b></div></div></div>
 </section>
 <div class="footer">GHAISAN • Astronaut Mission Control • Data tersimpan otomatis di perangkat ini</div>
@@ -76,6 +76,7 @@ header{padding:24px 0 10px}.nav{display:flex;align-items:center;justify-content:
 <div class="modal" id="activityModal"><div class="modalbox"><h2 id="modalTitle">Tambah Misi</h2><div class="form">
  <div class="field"><label>Hari</label><select id="fday"></select></div>
  <div class="field"><label>Nama kegiatan</label><input id="fname" placeholder="Contoh: Sekolah"></div>
+ <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><div class="field"><label>Mulai</label><input id="fstart" type="time"></div><div class="field"><label>Selesai</label><input id="fend" type="time"></div></div>
  <div class="field"><label>Kategori</label><select id="ftype"><option>Sekolah</option><option>Les</option><option>Olahraga</option><option>Kursus</option><option>Rumah</option><option>Lainnya</option></select></div>
  <div class="modalActions"><button class="btn" onclick="closeActivity()">Batal</button><button class="btn primary" onclick="saveActivity()">Simpan</button></div>
 </div></div></div>
@@ -98,11 +99,6 @@ const DEFAULT={name:'GHAISAN',school:'Kelas 1 Ummu Kulsum • T.A. 2026/2027',no
 {day:3,start:'14:30',end:'15:30',name:'Renang',type:'Olahraga'},
 {day:4,start:'06:25',end:'11:00',name:'Sekolah',type:'Sekolah'}]};
 let data=JSON.parse(localStorage.getItem('ghaisanMission')||'null')||structuredClone(DEFAULT);
-if(!Array.isArray(data.notesByDay)) {
-  data.notesByDay=Array(7).fill('');
-  if(data.notes) data.notesByDay[0]=data.notes;
-}
-data.activities=(data.activities||[]).map(x=>({day:x.day,name:x.name||'',type:x.type||'Lainnya'}));
 let selected=(new Date().getDay()+6)%7, editIndex=null, sound=true;
 
 const $=id=>document.getElementById(id);
@@ -111,7 +107,7 @@ function doneKey(i){return 'gh_done_'+data.activities[i].day+'_'+i}
 function isDone(i){return localStorage.getItem(doneKey(i))==='1'}
 function render(){
  $('brandName').textContent=data.name||'GHAISAN';$('brandSub').textContent=data.school||'Kelas 1 Ummu Kulsum';
- $('notesDay').textContent=DAYS[selected];$('notes').textContent=(data.notesByDay[selected]||'').trim()||'Belum ada catatan untuk hari ini.';
+ $('notes').textContent=data.notes||'Belum ada catatan. Gunakan Pengaturan untuk menambahkan catatan penting.';
  renderTabs();renderDay();updateToday();
 }
 function renderTabs(){
@@ -131,25 +127,28 @@ function updateStats(){
 }
 function completeAll(){data.activities.forEach((x,i)=>{if(x.day===selected)localStorage.setItem(doneKey(i),'1')});renderDay();toast('🚀 Semua misi hari ini selesai!')}
 function toggleDone(i){let k=doneKey(i);localStorage.setItem(k,isDone(i)?'0':'1');renderDay();updateToday();if(isDone(i))toast('⭐ Misi selesai! Hebat, Ghaisan!')}
+function isCurrent(x){
+ let now=new Date(),today=(now.getDay()+6)%7;if(x.day!==today)return false;let n=now.getHours()*60+now.getMinutes(),s=toMin(x.start),e=toMin(x.end);return n>=s&&n<e
+}
+function toMin(v){let [h,m]=v.split(':').map(Number);return h*60+m}
 function updateToday(){
- let now=new Date(),day=(now.getDay()+6)%7,arr=data.activities.filter(x=>x.day===day);
- let done=arr.length>0&&arr.every(x=>isDone(data.activities.indexOf(x)));
- $('nextName').textContent=arr.length?(done?'Semua misi hari ini selesai 🎉':arr[0].name):'Tidak ada misi hari ini';
- $('countdown').textContent=arr.length?(done?'⭐':'🚀'):'—';
+ let now=new Date(),day=(now.getDay()+6)%7,arr=data.activities.filter(x=>x.day===day).sort((a,b)=>a.start.localeCompare(b.start)),n=now.getHours()*60+now.getMinutes(),next=arr.find(x=>toMin(x.start)>n),current=arr.find(x=>toMin(x.start)<=n&&toMin(x.end)>n);
+ let title=current?current.name:(next?next.name:'Semua misi hari ini selesai 🎉');$('nextName').textContent=current?'Sedang berlangsung: '+title:title;
+ if(current){$('countdown').textContent='🚀 NOW';}
+ else if(next){let target=new Date(now);let [h,m]=next.start.split(':').map(Number);target.setHours(h,m,0,0);$('countdown').textContent=fmt(Math.max(0,Math.floor((target-now)/1000)))}
+ else $('countdown').textContent='⭐';
  let h=now.getHours();$('greeting').textContent=(h<11?'Selamat pagi':h<15?'Selamat siang':h<18?'Selamat sore':'Selamat malam')+', '+(data.name||'Ghaisan')+'!';
 }
+function fmt(s){let h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;return [h,m,x].map(v=>String(v).padStart(2,'0')).join(':')}
 function openAdd(){editIndex=null;$('modalTitle').textContent='Tambah Misi';fillForm({day:selected});$('activityModal').classList.add('show')}
 function editActivity(i){editIndex=i;$('modalTitle').textContent='Edit Misi';fillForm(data.activities[i]);$('activityModal').classList.add('show')}
-function fillForm(x){$('fday').innerHTML=DAYS.map((d,i)=>`<option value="${i}">${d}</option>`).join('');$('fday').value=x.day??selected;$('fname').value=x.name||'';$('ftype').value=x.type||'Lainnya'}
-function saveActivity(){let o={day:+$('fday').value,name:$('fname').value.trim(),type:$('ftype').value};if(!o.name)return toast('⚠️ Isi nama kegiatan terlebih dahulu.');if(editIndex===null)data.activities.push(o);else data.activities[editIndex]=o;save();selected=o.day;closeActivity();render();toast('💾 Misi tersimpan')}
+function fillForm(x){$('fday').innerHTML=DAYS.map((d,i)=>`<option value="${i}">${d}</option>`).join('');$('fday').value=x.day??selected;$('fname').value=x.name||'';$('fstart').value=x.start||'';$('fend').value=x.end||'';$('ftype').value=x.type||'Lainnya'}
+function saveActivity(){let o={day:+$('fday').value,name:$('fname').value.trim(),start:$('fstart').value,end:$('fend').value,type:$('ftype').value};if(!o.name||!o.start||!o.end)return toast('⚠️ Lengkapi nama dan jam.');if(toMin(o.end)<=toMin(o.start))return toast('⚠️ Jam selesai harus setelah jam mulai.');if(editIndex===null)data.activities.push(o);else data.activities[editIndex]=o;save();selected=o.day;closeActivity();render();toast('💾 Misi tersimpan')}
 function deleteActivity(i){if(confirm('Hapus misi ini?')){data.activities.splice(i,1);save();render();toast('🗑️ Misi dihapus')}}
 function closeActivity(){$('activityModal').classList.remove('show')}
-function openNote(){$('noteTitle').textContent='📝 Catatan '+DAYS[selected];$('fnotes').value=data.notesByDay[selected]||'';$('noteModal').classList.add('show')}
-function closeNote(){$('noteModal').classList.remove('show')}
-function saveNote(){data.notesByDay[selected]=$('fnotes').value.trim();save();closeNote();render();toast('📝 Catatan '+DAYS[selected]+' tersimpan')}
-function openSettings(){$('sname').value=data.name;$('sschool').value=data.school;$('settingsModal').classList.add('show')}
+function openSettings(){$('sname').value=data.name;$('sschool').value=data.school;$('snotes').value=data.notes||'';$('settingsModal').classList.add('show')}
 function closeSettings(){$('settingsModal').classList.remove('show')}
-function saveSettings(){data.name=$('sname').value.trim()||'GHAISAN';data.school=$('sschool').value.trim()||'Kelas 1 Ummu Kulsum • T.A. 2026/2027';save();closeSettings();render();toast('⚙️ Pengaturan disimpan')}
+function saveSettings(){data.name=$('sname').value.trim()||'GHAISAN';data.school=$('sschool').value.trim()||'Kelas 1 Ummu Kulsum • T.A. 2026/2027';data.notes=$('snotes').value.trim();save();closeSettings();render();toast('⚙️ Pengaturan disimpan')}
 function toggleSound(){sound=!sound;$('soundText').textContent=sound?'Suara ON':'Suara OFF';toast(sound?'🔊 Suara diaktifkan':'🔇 Suara dimatikan')}
 function toast(t){let e=$('toast');e.textContent=t;e.classList.add('show');clearTimeout(window.tt);window.tt=setTimeout(()=>e.classList.remove('show'),2200)}
 render();setInterval(()=>{updateToday();if(selected===(new Date().getDay()+6)%7)renderDay()},1000);
