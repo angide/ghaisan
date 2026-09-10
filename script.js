@@ -1,8 +1,8 @@
 // ==========================================
 // EDIT JADWAL DI BAGIAN INI
 // ==========================================
-// Ganti nama mata pelajaran dan catatan sesuai
-// jadwal sekolah Ghaisan.
+// Silakan ubah nama pelajaran dan catatan sesuai
+// kebutuhan Ghaisan.
 // Tidak menggunakan jam.
 // ==========================================
 
@@ -12,13 +12,11 @@ const scheduleData = {
     subjects: [
       "Upacara",
       "Sholat Dhuha",
-      "Pancasila",
       "Seni Musik 1",
-      "Al Islam 2",
-      "Matematika",
-      "Les"
+      "Al-Islam 2",
+      "Matematika 2"
     ],
-    note: "Seragam Merah Putih. Pulang jam 13.45 WIB 🚀"
+    note: "Jangan lupa membawa perlengkapan sekolah hari Senin. 🚀"
   },
   selasa: {
     title: "Selasa",
@@ -26,19 +24,19 @@ const scheduleData = {
       "Tahsin Ummi",
       "Bahasa Jawa 2",
       "Matematika 3",
-      "Bahasa Inggris 2"
+      "Bahasa Inggris 2",
+      "Tugas Piket"
     ],
-    note: "Seragam Batik Purwo. Pulang jam 13.00 WIB. ⭐"
+    note: "Siapkan buku dan alat tulis sebelum berangkat. ⭐"
   },
   rabu: {
     title: "Rabu",
     subjects: [
       "Tahsin Ummi",
       "Olahraga 3",
-      "Matematika 3",
-      "Ekskul: ROBOTIC"
+      "Matematika 3"
     ],
-    note: "Seragam Olahraga. Pulang Jam 13.40 WIB. 🌟"
+    note: "Tetap semangat! Satu langkah kecil hari ini adalah kemajuan. 🌟"
   },
   kamis: {
     title: "Kamis",
@@ -46,18 +44,17 @@ const scheduleData = {
       "Tahsin Ummi",
       "Seni Rupa 2",
       "Al Islam 2",
-      "Bahasa Indonesia 3,"
-      "Les"
+      "Bahasa Indonesia 3"
     ],
-    note: "Seragam Batik Muhammadiyah. Pulang Jam 13.45. Sementara Tidak ikut Ekskul Renang. 🛰️"
+    note: "Pastikan semua tugas sudah dibawa dan dikumpulkan. 🛰️"
   },
   jumat: {
-    title: "Jumat",
+    title: "Jum'at",
     subjects: [
       "Tahsin Ummi",
       "Bahasa Indonesia 5"
     ],
-    note: "Seragam BIM Identitas. Pulang Jam 11.00 WIB. 🚀✨"
+    note: "Hebat! Selesaikan misi minggu ini dengan senyum. 🚀✨"
   }
 };
 
