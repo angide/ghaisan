@@ -1,237 +1,890 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Orbitron:wght@600;700;800&display=swap');
 
+
 :root {
+
   --navy: #07142f;
+
   --deep: #020817;
+
   --blue: #1d5cff;
+
   --cyan: #49dfff;
+
   --yellow: #ffd84d;
+
   --white: #f7fbff;
+
   --muted: #b8c9e8;
-  --card: rgba(13, 31, 67, .88);
+
+  --card: rgba(13, 31, 67, .90);
+
 }
 
-* { box-sizing: border-box; }
+
+* {
+
+  box-sizing: border-box;
+
+}
+
 
 body {
+
   margin: 0;
+
   min-height: 100vh;
+
   color: var(--white);
+
   font-family: 'Nunito', sans-serif;
+
   background:
-    radial-gradient(circle at 15% 15%, rgba(73,223,255,.12), transparent 24%),
-    radial-gradient(circle at 85% 35%, rgba(104,75,255,.14), transparent 26%),
-    linear-gradient(160deg, #07142f 0%, #020817 65%, #06142e 100%);
+
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(73,223,255,.12),
+      transparent 24%
+    ),
+
+    radial-gradient(
+      circle at 85% 35%,
+      rgba(104,75,255,.14),
+      transparent 26%
+    ),
+
+    linear-gradient(
+      160deg,
+      #07142f 0%,
+      #020817 65%,
+      #06142e 100%
+    );
+
   overflow-x: hidden;
+
 }
 
-.stars, .stars::before, .stars::after {
+
+/* =====================================
+   BINTANG
+===================================== */
+
+.stars,
+.stars::before,
+.stars::after {
+
   position: fixed;
+
   inset: 0;
+
   content: "";
+
   pointer-events: none;
+
   background-image:
-    radial-gradient(circle, rgba(255,255,255,.9) 1px, transparent 1.5px),
-    radial-gradient(circle, rgba(255,255,255,.65) 1px, transparent 1.5px);
-  background-size: 95px 95px, 137px 137px;
-  background-position: 12px 18px, 42px 71px;
-  opacity: .34;
+
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.9) 1px,
+      transparent 1.5px
+    ),
+
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.65) 1px,
+      transparent 1.5px
+    );
+
+  background-size:
+    95px 95px,
+    137px 137px;
+
+  background-position:
+    12px 18px,
+    42px 71px;
+
+  opacity: .35;
+
   z-index: 0;
-}
-.stars::before { transform: scale(1.5); opacity: .16; }
-.stars::after { transform: translate(30px, 55px); opacity: .12; }
 
-.hero, main, footer { position: relative; z-index: 1; }
-
-.hero {
-  padding: 28px 20px 34px;
-  border-bottom: 1px solid rgba(255,255,255,.1);
-  background: linear-gradient(180deg, rgba(10,29,64,.9), rgba(4,14,33,.55));
-  overflow: hidden;
 }
 
-.hero-content {
-  width: min(1050px, 100%);
-  margin: auto;
-  display: flex;
-  align-items: center;
-  gap: 22px;
+
+.stars::before {
+
+  transform: scale(1.5);
+
+  opacity: .16;
+
 }
+
+
+.stars::after {
+
+  transform: translate(30px,55px);
+
+  opacity: .12;
+
+}
+
+
+/* =====================================
+   ASTRONOT
+===================================== */
 
 .astronaut {
-  width: 90px;
-  height: 90px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  font-size: 54px;
-  background: rgba(255,255,255,.08);
-  border: 2px solid rgba(73,223,255,.35);
-  box-shadow: 0 0 30px rgba(73,223,255,.16);
-  animation: float 3.2s ease-in-out infinite;
+
+  position: fixed;
+
+  z-index: 0;
+
+  font-size: 65px;
+
+  pointer-events: none;
+
+  filter:
+    drop-shadow(0 0 12px rgba(73,223,255,.5));
+
+  animation:
+    astronautFloat 5s ease-in-out infinite;
+
 }
+
+
+.astronaut-1 {
+
+  right: 3%;
+
+  top: 20%;
+
+}
+
+
+.astronaut-2 {
+
+  left: 2%;
+
+  bottom: 15%;
+
+  font-size: 48px;
+
+  animation-delay: 1.8s;
+
+}
+
+
+@keyframes astronautFloat {
+
+  0% {
+
+    transform:
+      translateY(0)
+      rotate(-5deg);
+
+  }
+
+  50% {
+
+    transform:
+      translateY(-25px)
+      rotate(5deg);
+
+  }
+
+  100% {
+
+    transform:
+      translateY(0)
+      rotate(-5deg);
+
+  }
+
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.hero {
+
+  position: relative;
+
+  z-index: 1;
+
+  padding: 30px 20px 35px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.1);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10,29,64,.95),
+      rgba(4,14,33,.65)
+    );
+
+}
+
+
+.hero-content {
+
+  width: min(1050px,100%);
+
+  margin: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+}
+
+
+.rocket {
+
+  width: 90px;
+
+  height: 90px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  font-size: 55px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    2px solid rgba(73,223,255,.35);
+
+  box-shadow:
+    0 0 30px rgba(73,223,255,.18);
+
+  animation:
+    rocketFloat 3s ease-in-out infinite;
+
+}
+
+
+@keyframes rocketFloat {
+
+  0%,100% {
+
+    transform:
+      translateY(0)
+      rotate(-4deg);
+
+  }
+
+  50% {
+
+    transform:
+      translateY(-10px)
+      rotate(4deg);
+
+  }
+
+}
+
 
 .eyebrow {
-  margin: 0 0 4px;
+
+  margin: 0 0 5px;
+
   color: var(--cyan);
-  font: 700 12px 'Orbitron', sans-serif;
+
+  font:
+    700 12px 'Orbitron', sans-serif;
+
   letter-spacing: 2px;
+
 }
+
 
 h1 {
+
   margin: 0;
-  font: 800 clamp(30px, 7vw, 56px) 'Orbitron', sans-serif;
+
+  font:
+    800 clamp(30px,7vw,56px)
+    'Orbitron', sans-serif;
+
   letter-spacing: -1px;
-  text-shadow: 0 0 22px rgba(73,223,255,.22);
+
+  text-shadow:
+    0 0 22px rgba(73,223,255,.22);
+
 }
+
 
 .subtitle {
+
   margin: 7px 0 0;
+
   color: var(--muted);
+
   font-size: 17px;
+
   font-weight: 700;
+
 }
 
-.planet {
-  position: absolute;
-  border-radius: 50%;
-  opacity: .32;
-  filter: blur(.2px);
-}
-.planet-one {
-  width: 110px; height: 110px; right: 7%; top: -42px;
-  background: radial-gradient(circle at 35% 30%, #ffd36a, #a63c8d 45%, #32175f);
-}
-.planet-two {
-  width: 45px; height: 45px; left: 6%; bottom: -20px;
-  background: radial-gradient(circle at 35% 30%, #70f3ff, #2861c9 55%, #12204c);
-}
+
+/* =====================================
+   MAIN
+===================================== */
 
 main {
-  width: min(1050px, calc(100% - 30px));
-  margin: 0 auto;
+
+  position: relative;
+
+  z-index: 1;
+
+  width:
+    min(1050px, calc(100% - 30px));
+
+  margin: auto;
+
   padding: 28px 0 40px;
+
 }
 
-.intro { text-align: center; margin-bottom: 20px; }
-.intro h2 {
-  margin: 0 0 4px;
-  font: 800 24px 'Orbitron', sans-serif;
+
+.intro {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+
 }
-.intro p { margin: 0; color: var(--muted); }
+
+
+.intro h2 {
+
+  margin: 0 0 4px;
+
+  font:
+    800 24px
+    'Orbitron', sans-serif;
+
+}
+
+
+.intro p {
+
+  margin: 0;
+
+  color: var(--muted);
+
+}
+
+
+/* =====================================
+   TOMBOL HARI
+===================================== */
 
 .day-buttons {
+
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+
+  grid-template-columns:
+    repeat(5,1fr);
+
   gap: 10px;
+
   margin-bottom: 18px;
+
 }
+
 
 .day-btn {
-  border: 1px solid rgba(73,223,255,.25);
+
+  border:
+    1px solid rgba(73,223,255,.25);
+
   color: var(--white);
-  background: rgba(17, 39, 80, .75);
+
+  background:
+    rgba(17,39,80,.75);
+
   padding: 13px 8px;
+
   border-radius: 14px;
-  font: 800 15px 'Nunito', sans-serif;
+
+  font:
+    800 15px
+    'Nunito', sans-serif;
+
   cursor: pointer;
-  transition: .2s ease;
+
+  transition:
+    .2s ease;
+
 }
-.day-btn:hover { transform: translateY(-2px); border-color: var(--cyan); }
+
+
+.day-btn:hover {
+
+  transform:
+    translateY(-3px);
+
+  border-color:
+    var(--cyan);
+
+}
+
+
 .day-btn.active {
+
   color: #08142e;
-  background: linear-gradient(135deg, var(--yellow), #fff08b);
-  border-color: var(--yellow);
-  box-shadow: 0 8px 24px rgba(255,216,77,.18);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--yellow),
+      #fff08b
+    );
+
+  border-color:
+    var(--yellow);
+
+  box-shadow:
+    0 8px 24px
+    rgba(255,216,77,.18);
+
 }
+
+
+/* =====================================
+   CARD JADWAL
+===================================== */
 
 .schedule-card {
+
   background: var(--card);
-  border: 1px solid rgba(73,223,255,.18);
+
+  border:
+    1px solid rgba(73,223,255,.18);
+
   border-radius: 24px;
+
   padding: 24px;
-  box-shadow: 0 20px 60px rgba(0,0,0,.25);
-  backdrop-filter: blur(8px);
-  animation: appear .3s ease;
+
+  box-shadow:
+    0 20px 60px
+    rgba(0,0,0,.25);
+
+  backdrop-filter:
+    blur(8px);
+
+  animation:
+    appear .35s ease;
+
 }
+
+
+.schedule-layout {
+
+  display: grid;
+
+  grid-template-columns:
+    280px 1fr;
+
+  gap: 25px;
+
+}
+
+
+/* =====================================
+   SERAGAM
+===================================== */
+
+.uniform-card {
+
+  background:
+    rgba(255,255,255,.06);
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  border-radius: 20px;
+
+  padding: 15px;
+
+  text-align: center;
+
+}
+
+
+.uniform-title {
+
+  margin-bottom: 10px;
+
+  color: var(--cyan);
+
+  font:
+    800 18px
+    'Orbitron', sans-serif;
+
+}
+
+
+.uniform-image {
+
+  width: 100%;
+
+  height: 270px;
+
+  object-fit: contain;
+
+  display: block;
+
+  border-radius: 15px;
+
+  background:
+    rgba(255,255,255,.04);
+
+}
+
+
+/*
+  NANTI GANTI SRC GAMBAR DI script.js
+
+  Contoh:
+
+  images/seragam-senin.png
+
+  atau URL:
+
+  https://website.com/seragam-senin.png
+*/
+
+
+.uniform-name {
+
+  margin-top: 10px;
+
+  padding: 9px;
+
+  border-radius: 10px;
+
+  background:
+    rgba(255,216,77,.15);
+
+  color: var(--yellow);
+
+  font-weight: 900;
+
+}
+
+
+/* =====================================
+   HEADER JADWAL
+===================================== */
 
 .schedule-head {
+
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
+
   gap: 15px;
+
   margin-bottom: 16px;
+
 }
+
+
 .schedule-head h3 {
+
   margin: 0;
-  font: 800 24px 'Orbitron', sans-serif;
+
+  font:
+    800 24px
+    'Orbitron', sans-serif;
+
 }
+
+
 .badge {
+
   padding: 7px 11px;
+
   border-radius: 999px;
-  background: rgba(73,223,255,.1);
+
+  background:
+    rgba(73,223,255,.1);
+
   color: var(--cyan);
+
   font-weight: 800;
+
   font-size: 12px;
+
 }
+
+
+/* =====================================
+   DAFTAR PELAJARAN
+===================================== */
 
 .subject-list {
+
   display: grid;
+
   gap: 10px;
+
 }
+
 
 .subject {
+
   display: flex;
+
   align-items: center;
+
   gap: 13px;
+
   padding: 14px;
+
   border-radius: 15px;
-  background: rgba(255,255,255,.055);
-  border: 1px solid rgba(255,255,255,.06);
+
+  background:
+    rgba(255,255,255,.055);
+
+  border:
+    1px solid rgba(255,255,255,.06);
+
+  transition:
+    .2s ease;
+
 }
+
+
+.subject:hover {
+
+  transform:
+    translateX(5px);
+
+  background:
+    rgba(73,223,255,.08);
+
+}
+
+
 .number {
-  flex: 0 0 34px;
+
+  flex:
+    0 0 34px;
+
   height: 34px;
+
   display: grid;
+
   place-items: center;
+
   border-radius: 10px;
-  background: var(--blue);
+
+  background:
+    var(--blue);
+
   font-weight: 900;
+
 }
-.subject-name { font-size: 16px; font-weight: 800; }
+
+
+.subject-name {
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+}
+
+
+/* =====================================
+   CATATAN
+===================================== */
 
 .note {
+
   margin-top: 18px;
+
   padding: 16px;
+
   border-radius: 15px;
+
   color: #152039;
-  background: linear-gradient(135deg, #fff1a6, #ffd84d);
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff1a6,
+      #ffd84d
+    );
+
 }
-.note strong { display: block; margin-bottom: 3px; }
+
+
+.note strong {
+
+  display: block;
+
+  margin-bottom: 3px;
+
+}
+
+
+/* =====================================
+   ANIMASI KARTU
+===================================== */
+
+@keyframes appear {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(10px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
 
 footer {
-  padding: 22px 15px 30px;
+
+  position: relative;
+
+  z-index: 1;
+
+  padding:
+    22px 15px 30px;
+
   text-align: center;
+
   color: var(--muted);
+
   font-size: 14px;
+
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(-2deg); }
-  50% { transform: translateY(-8px) rotate(2deg); }
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 750px) {
+
+  .schedule-layout {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .uniform-image {
+
+    height: 250px;
+
+  }
+
 }
-@keyframes appear {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+
 
 @media (max-width: 600px) {
-  .hero { padding-top: 20px; }
-  .hero-content { gap: 14px; }
-  .astronaut { width: 68px; height: 68px; font-size: 40px; }
-  .subtitle { font-size: 14px; }
-  .day-buttons { grid-template-columns: repeat(3, 1fr); }
-  .day-btn { padding: 11px 6px; }
-  .schedule-card { padding: 17px; border-radius: 19px; }
-  .schedule-head { align-items: flex-start; flex-direction: column; }
+
+  .hero {
+
+    padding-top: 20px;
+
+  }
+
+
+  .hero-content {
+
+    gap: 14px;
+
+  }
+
+
+  .rocket {
+
+    width: 68px;
+
+    height: 68px;
+
+    font-size: 40px;
+
+  }
+
+
+  .subtitle {
+
+    font-size: 14px;
+
+  }
+
+
+  .day-buttons {
+
+    grid-template-columns:
+      repeat(3,1fr);
+
+  }
+
+
+  .day-btn {
+
+    padding: 11px 6px;
+
+  }
+
+
+  .schedule-card {
+
+    padding: 17px;
+
+    border-radius: 19px;
+
+  }
+
+
+  .schedule-head {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+  }
+
+
+  .astronaut {
+
+    opacity: .35;
+
+    font-size: 45px;
+
+  }
+
 }
